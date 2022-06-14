@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    body {
+
+      background-color: #f1f1f1;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+       /* width: 1440px;  */
+      
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      padding: 0 20px;
+
+
+    }
+
+    .column3 {
+      float: left;
+      padding: 0 20px;
+
+    }
+
+
+    /* Remove extra left and right margins, due to padding */
+    .row {
+      width:100%;
+     
+      margin-left: 260px;
+
+    }
+
+    /* Clear floats after the columns */
+    /* .row:after {
+      content: "";
+      display: table;
+      clear: both;
+
+
+    } */
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 0px;
+         margin-left: -190px; 
+         /* padding-right: 250px;
+        padding-left: 250px; */
+        /* margin-right: 90px; */
+
+      }
+
+      .column3 {
+        width: 100%;
+        display: block;
+        margin-top: -150px;
+        margin-bottom: 20px;
+        margin-left: -190px;
+        /* padding-right: 250px;
+        padding-left: 250px; */
+        /* margin-right: 90px; */
+
+
+      }
+      body{
+        width: 345px;
+          text-align: center; 
+          
+        
+      }
+  
+     
+
+
+    }
+
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 0px 0px 20px 0px;
+      text-align: left;
+      background-color: #ffff;
+      border-radius: 7px;
+      border-top: 4px solid cyan;
+    }
+
+    .card21 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 0px 0px 20px 0px;
+      text-align: left;
+      background-color: #ffff;
+      border-radius: 7px;
+      border-top: 4px solid  hsl(0, 78%, 62%);
+    }
+
+    .card22 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 0px 0px 20px 0px;
+      text-align: left;
+      background-color: #ffff;
+      border-radius: 7px;
+      border-top: 4px solid hsl(34, 97%, 64%);
+    }
+
+    .card1 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 130px 0px 0px 0px;
+      text-align: left;
+      background-color: #ffff;
+      border-radius: 7px;
+      border-top: 4px solid hsl(180, 62%, 55%);
+      /* border-top:10px;
+  border-color: coral; */
+      /* border-style: solid;
+  border-color: coral; */
+
+    }
+
+    .card3 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 130px 0px 0px 0px;
+      text-align: left;
+      background-color: #ffff;
+      border-radius: 7px;
+      border-top: 4px solid hsl(212, 86%, 64%);
+    }
+    .parent
+    {
+      /* display:flex; */
+      position: relative;
+    }
+
+    .child
+    {
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+    }
+
+
+
+    .h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      font-style: bold;
+      color: rgb(82, 79, 79);
+      margin: 0;
+      padding: 0;
+    }
+
+    #h13 {
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 200;
+      color: rgb(134, 119, 119);
+      text-align: center;
+    }
+
+    #h14 {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: rgb(165, 152, 152);
+      letter-spacing: -0.4px;
+    }
+
+    #h15 {
+      font-size: 18px;
+      font-family: sans-serif;
+      color: rgb(71, 65, 65);
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0;
+    }
+
+    #h11 {
+
+      font-weight: 600;
+      align-content: center;
+    }
+
+    #h12 {
+
+      font-weight: 200;
+      letter-spacing: 2px;
+      align-content: center;
+
+    }
+
+    /* .center{
+    position: absolute;
+    left: 50%;
+    top:50%; 
+      transform: translate(-50% , -50%); 
+
+
+} */
+  </style>
+</head>
+<!-- <div class="center"> -->
+
+<body >
+<br>
+  <P class="h1" id="h12">Reliable, efficient delivery</P>
+  <p class="h1" id="h11">Powered by Technology</p>
+  <p id="h13"font-weight:200px>Our Artificial Intelligence powered tools use millions of project data<br> points to ensure that your
+    project is successful</p>
+  <br><br>
+
+  <div class="parent">
+    <div class="row child">
+
+      <div class="column">
+        <div class="card1">
+          <h3 id="h15">Supervisor</h3>
+          <p id="h14">Monitor activity to identify project </p>
+          <p id="h14">roadblocks</p>
+          <div align="right">
+            <img src="Task/images/icon-supervisor.svg">
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card21">
+          <h3 id="h15">Team Builder</h3>
+          <p id="h14">Scans out talant network to create the</p>
+          <p id="h14">Optimal team for your project</p>
+          <div align="right">
+            <img src="Task/images/icon-team-builder.svg">
+          </div>
+        </div>
+        <div class="card22">
+          <h3 id="h15">Karma</h3>
+          <p id="h14">Regurlarly evaluates our talent to ensure</p>
+          <p id="h14">quality</p>
+          <div align="right">
+            <img src="Task/images/icon-karma.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="column3">
+        <div class="card3">
+          <h3 id="h15">Calculator</h3>
+          <p id="h14">Uses data from past projects to provide</p>
+          <p id="h14">better delivery eltimates</p>
+          <div align="right">
+            <img src="Task/images/icon-calculator.svg">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</body>
+<!-- </div> -->
+
+</html>
